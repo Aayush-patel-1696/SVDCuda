@@ -376,7 +376,7 @@ void matmul_3(Matrix &Y, Matrix &V, Matrix &Si, Matrix &ans) {
 
 }
 
-void DMD(Matrix &X, Matrix &Y) {
+void SVD(Matrix &X, Matrix &Y) {
     dim3 size(32, 32);
     
     X.cuda_malloc();
