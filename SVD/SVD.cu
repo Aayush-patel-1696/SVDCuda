@@ -436,7 +436,7 @@ int main() {
     b.random_init(1, 5);
 
     auto start = high_resolution_clock::now();
-    DMD(a, b);
+    SVD(a, b);
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<milliseconds>(stop - start);
     cout << "Matrix Multiplication time is : " << duration.count() << " milliseconds" << endl;
